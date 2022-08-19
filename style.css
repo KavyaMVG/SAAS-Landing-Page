@@ -11,6 +11,9 @@
     padding: 2rem;
     margin: auto;
 }
+.hide-for-desktop {
+    display: none;
+}
 
 .navbar{
     display: flex;
@@ -145,4 +148,90 @@
 }
 .service-text p{
     padding: 0.5rem;
+}
+
+@media only screen and (max-width:900px) {
+    .hide-for-desktop {
+        display: block;
+        cursor: pointer;
+    }
+
+    .hide-for-desktop div {
+        height: 3px;
+        width: 1.5rem;
+        background-color: #fff;
+        margin: 5px;
+    }
+    .container{
+        padding: 3rem;
+    }
+    .btn{
+        padding: 1rem;
+    }
+    .navbar{
+        justify-content: space-between;
+    }
+    .nav-list{
+        display: none;
+    }
+    .hero-content{
+        display: block;
+    }
+
+    .hero-text,
+    .hero-img,
+    .features-list,
+    .feature-item,
+    .features-img{
+        width: 100%;
+    }
+    .features{
+        display: block
+    }
+    .feature-title-wrapper h5{
+        font-size: 1.5rem;
+    }
+    .services h1{
+        max-width: 400px;
+        font-size: 2rem
+    }
+    .service-cards{
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .service{
+        width: 45%;
+        margin: auto;
+    }
+}
+
+@media only screen and (max-width:420px) {
+    .container{
+        padding:1rem;
+    }
+    nav img{
+        height: 30px
+    }
+    .hero-content {
+        padding: 1rem;
+    }
+    .hero-text h1{
+        font-size: 2rem;
+    }
+    .features-list>h3 {
+        font-size: 2rem;
+    }
+    .feature-title-wrapper h5 {
+        font-size: 1.25rem;
+    }
+    .feature-item{
+        margin: 2rem 0;
+    }
+    .service {
+        width: 80%;
+    }
+    .services h1 {
+        margin: 1rem 0;
+        padding: 0 0.8rem;
+    }
 }
